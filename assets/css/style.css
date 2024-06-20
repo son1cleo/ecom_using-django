@@ -1,0 +1,255 @@
+/* Frontend design */
+
+.nav-cart{
+    color: #009970;
+    font-size: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.nav-cart:hover{
+    color: #00b383;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container-fluid img{
+        padding-right: 2px;
+}
+.navbar{
+    background-color: #fff;
+    height: 60px;
+    margin: 20px;
+    border-radius: 50px;
+
+}
+
+.navbar-brand{
+
+    font-weight:500;
+    color: #009970;
+    font-size: 20px;
+    transition: 0.3s color;
+
+}
+.login-button {
+    background-color: #009970;
+    color: white;
+    font-size: 14 px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #00b383;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.2rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000;
+}
+
+@media(min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,.nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.home{
+    background-image: url('../img/banner2.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.container {
+    color: white; /* Ensure text color is black */
+    padding: 20px;
+    text-align: center;
+}
+
+.container h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container h1 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.container h1 span {
+    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+    font-weight: bold; /* Make 'Best Prices' bold */
+    font-size: 30px;
+}
+
+.container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.container button {
+    background-color: #009970;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #00b383;
+}
+
+.btn-common {
+    background-color: #009970;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-common:hover {
+    background-color: #00b383;
+    transform: scale(1.05);
+}
+
+.one img{
+    width: 100%;
+    height: 90%;
+    
+   
+}
+.one {
+    position : relative;
+}
+.one .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.3s ease;
+    opacity: 0.7;
+    background-color: rgb(1, 1, 1);
+    width: 100%;
+    height: 100%;
+}
+
+.one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.one .details:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+
+
+#banner {
+    background-image: url('banner.png'); /* Ensure the path is correct */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center 80px; /* Simplified */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#banner h1{
+
+    font-weight: bold;
+   
+}
+#banner button{
+    background-color: black;
+}
